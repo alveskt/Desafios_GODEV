@@ -1,0 +1,128 @@
+/* Cores usadas na tabela */
+:root {
+    --azul_marinho: #003366;
+    --azul_celeste: #1398BE;
+    --cinza: #CCCCCC;
+    --cinza_claro: #DDDDDD;
+    --cinza_escuro: #999999;
+    --cinza_escuro2: #666666;
+    --cinza_escuro3: #8F8F8F;
+    --cinza_escuro4: #555555;
+    --fundo: #F7F7F7;
+    --laranja: #DE9800;
+    --vermelho: #C91B04;
+}
+
+/* Definindo a posição da tabela e fonte utilizada */
+* {
+    font-family: Arial;
+    margin: auto;  
+}
+
+caption {
+    margin: auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--cinza_escuro4);
+    font-weight: bold;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+/* Formatação da tabela e dos itens*/
+table, tr {
+    border: 1px solid var(--cinza_claro);
+    border-collapse: collapse;
+}
+tr {
+    padding: 2rem;
+}
+th {
+    font-size: 13px;
+    color: var(--cinza_escuro);
+    font-weight: bold;
+    text-align: center;
+    padding: 0.2rem;
+}
+td {
+    font-size: 14px;
+    color: var(--cinza_escuro2);
+    text-align: center;
+}
+td:nth-child(odd):not(:first-child) {
+    background-color: var(--fundo);
+}
+td:nth-child(n):not(:nth-child(2)):not(:nth-child(11)):not(:last-child){
+    width: 35px;
+}
+td:nth-child(11){
+    width: 32px;
+    padding-right: 0.3rem;
+}
+
+/* formatação da borda específica entre os itens 4º/5º e 16º/17º */
+.borda {
+    border-bottom: 2px solid var(--cinza);
+}
+
+/* Formatação dos números que indicam as posições */
+.posicao_classificacao {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--cinza);
+    padding: 0.2rem;
+}
+
+/* Inserindo as cores nas posições e ícones do rodapé */
+.libertadores {
+    color: var(--azul_marinho);
+}
+.pre_libertadores {
+    color: var(--azul_celeste);
+}
+.sul_americana {
+    color: var(--laranja);
+}
+.rebaixados {
+    color: var(--vermelho);
+}
+
+/* Formatação dos nomes dos times */
+.nome_time {
+    font-size: 14px;
+    color: var(--cinza_escuro2);
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Formatação da coluna de pontos*/
+.qtd_pontos {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Formatação dos itens do rodapé da tabela */
+h2 {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--cinza_escuro3);
+    text-align: left;
+    padding-top: 0.5rem;
+}
+h3 {
+    font-size: 10px;
+    color: var(--cinza_escuro4);
+    text-align: left;
+    padding: 0.5rem;
+    padding-right: 2.75rem;
+}
+
+/* Formatação dos ícones da legenda no rodapé */
+.fas {
+    padding-left: 0.5rem;
+    padding-right: 0.25rem;
+}
